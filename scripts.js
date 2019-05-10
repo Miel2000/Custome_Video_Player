@@ -1,5 +1,7 @@
 /* chope nos elements */
 
+window.onload = function() {
+    var context = new AudioContext();
 
 const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
@@ -13,7 +15,6 @@ const ranges = player.querySelectorAll('.player__slider');
 /* functions */
 
 function togglePlay() {
-    var context = new AudioContext();
   //  const method = video.paused ? 'play' : 'pause'
   //  video[method]();
     if(video.paused){
@@ -113,3 +114,4 @@ progress.addEventListener('mouseup', () => mousedown = false);
 video.addEventListener('timeupdate', poppup);
 
 
+}
