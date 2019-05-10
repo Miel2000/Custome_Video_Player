@@ -1,5 +1,5 @@
 /* chope nos elements */
-
+var context = new AudioContext();
 
 const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
