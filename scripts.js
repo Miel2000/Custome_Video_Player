@@ -1,4 +1,7 @@
 /* chope nos elements */
+
+window.onload = function() {
+    var context = new AudioContext();
 var context = new AudioContext();
 
 const player = document.querySelector('.player');
@@ -108,3 +111,6 @@ progress.addEventListener('mouseup', () => mousedown = false);
 
 
 video.addEventListener('timeupdate', poppup);
+
+
+}
