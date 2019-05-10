@@ -2,7 +2,7 @@
 
 window.onload = function() {
     var context = new AudioContext();
-var context = new AudioContext();
+
 
 const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
