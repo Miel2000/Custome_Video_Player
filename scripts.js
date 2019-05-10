@@ -113,4 +113,3 @@ progress.addEventListener('mouseup', () => mousedown = false);
 video.addEventListener('timeupdate', poppup);
 
 
-}
