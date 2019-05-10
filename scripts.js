@@ -1,7 +1,5 @@
 /* chope nos elements */
 
-window.onload = function() {
-    var context = new AudioContext();
 
 
 const player = document.querySelector('.player');
@@ -19,6 +17,7 @@ function togglePlay() {
   //  const method = video.paused ? 'play' : 'pause'
   //  video[method]();
     if(video.paused){
+        var context = new AudioContext();
         video.play();
     } else {
         video.pause();
