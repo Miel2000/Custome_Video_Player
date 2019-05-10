@@ -1,7 +1,6 @@
 /* chope nos elements */
 
 
-
 const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
 const progress = player.querySelector('.progress');
@@ -14,11 +13,12 @@ const ranges = player.querySelectorAll('.player__slider');
 /* functions */
 
 function togglePlay() {
+    var context = new AudioContext();
   //  const method = video.paused ? 'play' : 'pause'
   //  video[method]();
     if(video.paused){
-        var context = new AudioContext();
-        context.video.play();
+    
+      video.play();
     } else {
         video.pause();
     }
@@ -75,6 +75,7 @@ function poppup(){
         
     }
 }
+
 /*
 function poppup(){
     let cTime = video.currentTime;
@@ -112,3 +113,4 @@ progress.addEventListener('mouseup', () => mousedown = false);
 video.addEventListener('timeupdate', poppup);
 
 
+}
