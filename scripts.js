@@ -18,7 +18,7 @@ function togglePlay() {
   //  video[method]();
     if(video.paused){
         var context = new AudioContext();
-        video.play();
+        context.video.play();
     } else {
         video.pause();
     }
